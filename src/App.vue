@@ -1,30 +1,65 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <!-- The check box for the sidenav  -->
+  <input type="checkbox" id="check">
+  <div class="sidenav">
+    <Sidenav />
   </div>
-  <router-view/>
+  <div class="router-view">
+    <router-view/>
+  </div>
 </template>
 
+<script>
+import Sidenav from './components/Sidenav'
+export default {
+  components: { Sidenav }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+.sidenav{
+  background: black;
+  padding: 20px 50px 50px 0;
+  position: fixed;
+  left: 0;
+  width: 300px;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 0.5s;
+  transition-property: left; 
+}
+#check:checked ~ .sidenav{
+  left: -250px;
+  padding-right: 15px;
+}
+#check:checked ~ .sidenav .logo label #menu{
+  display: inline;
+}
+#check:checked ~ .sidenav .logo label #close{
+  display: none;
+}
+#check:checked ~ .sidenav .the-quote{
+  visibility: hidden;
+}
+#check:checked ~.sidenav .nav a.router-link-exact-active span.material-icons{
+  visibility: hidden;
 }
 
-#nav {
-  padding: 30px;
+
+#check{
+  display: none;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+/* the router-view part */
+.router-view{
+  margin-left: 300px;
+  height: 100vh;
+  transition: 0.5s;
 }
+#check:checked ~ .router-view{
+  margin-left: 50px;
 
-#nav a.router-link-exact-active {
-  color: #42b983;
 }
 </style>
