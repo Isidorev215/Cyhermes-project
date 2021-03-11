@@ -4,7 +4,7 @@
   <div class="sidenav">
     <Sidenav />
   </div>
-  <div class="router-view px-5 py-4"> <!--Added bootstrap padding here becuase the sidenav if position fixed --> 
+  <div class="router-view px-5 py-3"> <!--Added bootstrap padding here becuase the sidenav if position fixed --> 
     <router-view/>
   </div>
 </template>

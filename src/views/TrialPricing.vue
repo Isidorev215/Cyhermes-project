@@ -21,14 +21,14 @@
     <RangeInput />
   </div>
 
-  <div class="row mt-3">
-    <Module />
+  <div class="row mt-2">
+    <Modules />
   </div>
 
-  <div class="row final-row mt-3">
+  <div class="row final-row mt-2">
     <div class="col-12">
-      <div>Go Back</div>
-      <button>Continue</button>
+      <router-link :to="{ name: 'GetStarted'}">Go back</router-link>
+      <router-link :to="{name: 'PaymentMethod'}" class="btn">Continue</router-link>
     </div>
   </div>
 </div>
@@ -37,9 +37,9 @@
 <script>
 import SelectPackage from '../components/SelectPackage.vue'
 import RangeInput from '../components/RangeInput.vue'
-import Module from '../components/Module.vue'
+import Modules from '../components/Modules.vue'
 export default {
-  components: { SelectPackage, RangeInput, Module }
+  components: { SelectPackage, RangeInput, Modules }
 }
 </script>
 
@@ -82,12 +82,21 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.final-row .col-12 div{
+.final-row .col-12 a{
     color: red;
     font-size: 13px;
     font-weight: 600;
+    cursor: pointer;
 }
-.final-row .col-12 button{
+.final-row .col-12 a:first-child:hover{
+  text-decoration: none;
+  color: #ffc107;
+}
+.final-row .col-12 a:nth-child(2):hover{
+  color: white;
+  background: rgb(78, 78, 255);
+}
+.final-row .col-12 .btn{
   border-radius: 5px;
   outline: none;
   color: black;

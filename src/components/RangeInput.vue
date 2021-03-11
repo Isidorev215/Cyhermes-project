@@ -3,7 +3,7 @@
       <h6>Add more users</h6>
       <h6 class="mb-3"><span>NGN99,99</span> per user</h6>
       <div class="rangeDiv">
-        <div class="minValue">100</div>
+        <div class="minValue">0</div>
         <div class="maxValue">>1000</div>
         <input type="range" min="0" max="1000" value="100" ref="slider" id="slider" @input="handleInput">
         <div ref="selector" id="selector" :style="{left: left}">

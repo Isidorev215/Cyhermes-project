@@ -16,7 +16,7 @@ export default {
 <style scoped>
 /* the quote side */
 .quote{
-    color: grey;
+    color: lightgray;
     position: relative;
 }
 fieldset{
