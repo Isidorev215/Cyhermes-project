@@ -5,7 +5,7 @@ import GetStarted from '../views/GetStarted.vue'
 
 const routes = [
   {
-    path: '/trial&Pricing',
+    path: '/',
     name: 'TrialPricing',
     component: TrialPricing
   },

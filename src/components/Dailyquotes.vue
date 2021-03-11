@@ -1,8 +1,10 @@
 <template>
+    <div class="quote">
       <fieldset>
           <legend><span>"</span></legend>
           <p>Success is not final; failure is not fatal: it is the courage to contine that counts. <span>-Winston Churchil</span></p>
       </fieldset>
+    </div>
 </template>
 
 <script>
@@ -12,6 +14,11 @@ export default {
 </script>
 
 <style scoped>
+/* the quote side */
+.quote{
+    color: grey;
+    position: relative;
+}
 fieldset{
     border: 1px solid gray;
     border-radius: 15px;

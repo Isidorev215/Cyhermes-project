@@ -106,13 +106,11 @@ export default {
   visibility: visible;
 }
 
-/* the quote side */
- .the-quote{
-   color: grey;
-   display: block;
-   margin-left: 50px;
-   height: 20%;
-   width: 80%;
-   position: relative;
- }
+/* the quote div for the flex positioning */
+.the-quote{
+  display: block;
+  margin-left: 50px;
+  height: 20%;
+  width: 80%;
+}
 </style>
