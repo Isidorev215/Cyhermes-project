@@ -5,49 +5,49 @@
   </div>
   <div class="col-12 second-col pt-3 pb-1">
       <div class="row">
-          <div class="col-4 " :class="{active: modOne}">
+          <div class="col-4 " :class="{active: modOne}" @click="modOne = !modOne">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module1.png" alt=""></div>
               <div class="col-text">Gorvernance Portal</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modTwo}">
+          <div class="col-4" :class="{active: modTwo}" @click="modTwo = !modTwo">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module2.png" alt=""></div>
               <div class="col-text">Corporate Universe</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modThree}">
+          <div class="col-4" :class="{active: modThree}" @click="modThree = !modThree">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module3.png" alt=""></div>
               <div class="col-text">Contract Domain</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modFour}">
+          <div class="col-4" :class="{active: modFour}" @click="modFour = !modFour">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module4.png" alt=""></div>
               <div class="col-text">Investors Relations</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modFive}">
+          <div class="col-4" :class="{active: modFive}" @click="modFive = !modFive">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module5.png" alt=""></div>
               <div class="col-text">Dispute Portfolio</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modSix}">
+          <div class="col-4" :class="{active: modSix}" @click="modSix = !modSix">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module6.png" alt=""></div>
               <div class="col-text">Minute Book</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modSeven}">
+          <div class="col-4" :class="{active: modSeven}" @click="modSeven = !modSeven">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module7.png" alt=""></div>
               <div class="col-text">Reporting Tool</div>
               <div class="col-icon"><span class="material-icons">info</span></div>
           </div>
-          <div class="col-4" :class="{active: modEight}">
+          <div class="col-4" :class="{active: modEight}" @click="modEight = !modEight">
               <div class="col-overlay"></div>
               <div class="image"><img src="../assets/modules/module8.png" alt=""></div>
               <div class="col-text">Attendance Register</div>
@@ -103,6 +103,7 @@ export default {
     align-items: center;
     padding: 5px 5px;
     position: relative;
+    cursor: pointer;
 } 
 .col-overlay{
     position: absolute;

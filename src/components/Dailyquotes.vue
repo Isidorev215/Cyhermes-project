@@ -17,13 +17,13 @@ export default {
 /* the quote side */
 .quote{
     color: lightgray;
-    position: relative;
 }
 fieldset{
     border: 1px solid gray;
     border-radius: 15px;
     font-size: 10px;
     padding: 25px 40px 0;
+    position: relative;
 }
 fieldset legend{
     width: 50px;

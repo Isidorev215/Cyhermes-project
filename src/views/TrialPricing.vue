@@ -82,11 +82,12 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
-.final-row .col-12 a{
+.final-row .col-12 a:first-child{
     color: red;
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    opacity: 0.4;
 }
 .final-row .col-12 a:first-child:hover{
   text-decoration: none;
